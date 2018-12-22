@@ -28,6 +28,78 @@ main {
     filter: blur(2px);
 }
 
+/* VARS */ #ul_social_medias,
+#ul_social_medias_secundary {
+	--text-color: rgb(52, 228, 255);
+	--icon-size: 34px;
+}
+#ul_social_medias,
+#ul_social_medias_secundary {
+	position: absolute;
+	top: 30px;
+	color: var(--text-color);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+#ul_social_medias {
+	left: 30px;
+}
+#ul_social_medias_secundary {
+	right: 30px;
+}
+#ul_social_medias li,
+#ul_social_medias_secundary li {
+	margin: 15px 0;
+	margin-left: var(--icon-size);
+	position: relative;
+}
+#ul_social_medias li::before,
+#ul_social_medias_secundary li::before {
+	content: '';
+	position: absolute;
+	left: calc(-4px - var(--icon-size));
+	top: calc(50% - calc(var(--icon-size) / 2));
+	width: var(--icon-size);
+	height: var(--icon-size);
+	background-position: center;
+	background-size: cover;
+}
+#ul_social_medias li.facebook:before,
+#ul_social_medias li.m:before,
+#ul_social_medias_secundary li.facebook:before,
+#ul_social_medias_secundary li.m:before {
+	background-image: url(./imgs/icon_facebook.webp);
+}
+#ul_social_medias li.instagram:before,
+#ul_social_medias_secundary li.instagram:before {
+	background-image: url(./imgs/icon_instagram.webp);
+}
+#ul_social_medias li.twitch:before,
+#ul_social_medias_secundary li.twitch:before {
+	background-image: url(./imgs/icon_twitch.webp);
+}
+#ul_social_medias li.twitter:before,
+#ul_social_medias_secundary li.twitter:before {
+	background-image: url(./imgs/icon_twitter.webp);
+}
+#ul_social_medias li.youtube:before,
+#ul_social_medias_secundary li.youtube:before {
+	background-image: url(./imgs/icon_youtube.webp);
+}
+
+#a_hotpage {
+	position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
 /* VARS */ #h_org {
 	--padding_vertical: 5px;
 	--padding_horizontal: 28px;
