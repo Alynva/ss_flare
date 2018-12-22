@@ -54,6 +54,8 @@ main {
 	margin: 15px 0;
 	margin-left: var(--icon-size);
 	position: relative;
+	text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+	font-size: 15px;
 }
 #ul_social_medias li::before,
 #ul_social_medias_secundary li::before {
@@ -98,6 +100,7 @@ main {
     text-align: center;
     color: white;
     text-decoration: none;
+	text-shadow: rgb(0, 0, 0) 1px 1px 1px;
 }
 
 /* VARS */ #h_org {
